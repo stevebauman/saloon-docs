@@ -16,7 +16,7 @@ class GetServerRequest extends Request
 {
     // {...}
     
-    public function createDtoFromResponse(Response $response): mixed
+    public function createDtoFromResponse(Response $response): Server
     {
         $data = $response->json();
     
@@ -120,7 +120,7 @@ class UpdateServerRequest extends Request implements HasBody
 </strong>        ];
     }
     
-    public function createDtoFromResponse(Response $response): mixed
+    public function createDtoFromResponse(Response $response): Server
     {
         $data = $response->json();
     
